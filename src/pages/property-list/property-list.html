@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>PORTAL INMOBILIARIO</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../core/content/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="property-list.html">
+        <img class="header_logo" src="../../core/content/img/logo_header.svg" />
+      </a>
+    </header>
+    <div class="bg_img"></div>
+    <div class="main">
+      <div class="light_bg">
+        <div class="container">
+          <form>
+            <div class="search_bar_container">
+              <div class="select buy-sell-group">
+                <select id="select-sale-type"> </select>
+                <div class="select_arrow"></div>
+              </div>
+              <div class="select donde-group">
+                <select id="select-province"> </select>
+                <div class="select_arrow"></div>
+              </div>
+              <div class="select habitaciones-group">
+                <select id="select-room"> </select>
+                <div class="select_arrow"></div>
+              </div>
+              <div class="select baños-group">
+                <select id="select-bathroom"> </select>
+                <div class="select_arrow"></div>
+              </div>
+              <div class="select minimo-group">
+                <select id="select-min-price"> </select>
+                <div class="select_arrow"></div>
+              </div>
+              <div class="select maximo-group">
+                <select id="select-max-price"> </select>
+                <div class="select_arrow"></div>
+              </div>
+              <button id="search-button" type="button" class="btn buscar-group">
+                BUSCAR
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container seccion align-center">
+        <a href="../upload-property/upload-property.html" class="btn"
+          >SUBIR UNA PROPIEDAD</a
+        >
+      </div>
+      <div id="property-list" class="container"></div>
+    </div>
+    <footer>
+      <img class="footer_logo" src="../../core/content/img/logo_header.svg" />
+    </footer>
+  </body>
+</html>

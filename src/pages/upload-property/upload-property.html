@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>PORTAL INMOBILIARIO</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../core/content/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../property-list/property-list.html">
+        <img class="header_logo" src="../../core/content/img/logo_header.svg" />
+      </a>
+    </header>
+    <div class="bg_img"></div>
+    <div class="main">
+      <div class="light_bg">
+        <div class="container">
+          <div class="search_bar_container">
+            <a href="../property-list/property-list.html" class="btn volver"
+              >volver</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="titulo_pagina">
+        <h1>Subir una propiedad</h1>
+      </div>
+      <div class="container seccion_form">
+        <form>
+          <div>
+            <h1 class="col-12">Datos generales</h1>
+            <div class="col-12">
+              <input id="title" placeholder="Título" />
+              <p id="title-error" class="error"></p>
+            </div>
+            <div class="col-12">
+              <textarea id="notes" placeholder="Comentarios"></textarea>
+              <p id="notes-error" class="error"></p>
+            </div>
+            <div class="col-6">
+              <input id="email" placeholder="Email" />
+              <p id="email-error" class="error"></p>
+            </div>
+            <div class="col-6">
+              <input id="phone" placeholder="Teléfono" />
+              <p id="phone-error" class="error"></p>
+            </div>
+            <div class="col-6">
+              <input id="price" placeholder="Precio" />
+              <p id="price-error" class="error"></p>
+            </div>
+            <div class="col-6">
+              <div class="col-12 checkbox-list" id="saleTypes"></div>
+              <p id="saleTypes-error" class="error"></p>
+            </div>
+          </div>
+          <div>
+            <h1 class="col-12">Datos de la vivienda</h1>
+            <div class="col-8">
+              <input id="address" placeholder="Dirección postal" />
+              <p id="address-error" class="error"></p>
+            </div>
+            <div class="col-2">
+              <input id="city" placeholder="Localidad" />
+              <p id="city-error" class="error"></p>
+            </div>
+            <div class="col-2">
+              <select id="province" required> </select>
+              <p id="province-error" class="error"></p>
+            </div>
+            <div class="col-4">
+              <input id="squareMeter" placeholder="Metros cuadrados" />
+              <p id="squareMeter-error" class="error"></p>
+            </div>
+            <div class="col-4">
+              <input id="rooms" placeholder="Habitaciones" />
+              <p id="rooms-error" class="error"></p>
+            </div>
+            <div class="col-4">
+              <input id="bathrooms" placeholder="Cuartos de baño" />
+              <p id="bathrooms-error" class="error"></p>
+            </div>
+            <div class="col-12">
+              <input id="locationUrl" placeholder="URL Ubicación" />
+              <p id="locationUrl-error" class="error"></p>
+            </div>
+            <div class="col-12">
+              <h2>Características básicas</h2>
+            </div>
+            <div class="feature-container col-12">
+              <div class="col-6">
+                <input id="newFeature" placeholder="Añadir característica" />
+                <p id="newFeature-error" class="error"></p>
+              </div>
+              <div class="col-2 btn-contenedor">
+                <button type="button" id="insert-feature-button" class="btn">
+                  INSERTAR
+                </button>
+              </div>
+              <div id="mainFeatures" class="features col-12"></div>
+              <p id="mainFeatures-error" class="error"></p>
+            </div>
+            <div class="col-12">
+              <h2>Equipamiento</h2>
+            </div>
+            <div id="equipments" class="col-12 checkbox-list"></div>
+          </div>
+          <div>
+            <h1 class="col-12">Subir fotos</h1>
+            <div id="images" class="col-12 subir-imagenes">
+              <label id="add-image-button" for="add-image">
+                <input style="display: none;" id="add-image" type="file" />
+                <img src="../../core/content/img/add_image.svg" />
+              </label>
+            </div>
+            <div id="save-button" class="col-12 btn-contenedor">
+              <a href="#" class="btn">GUARDAR</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <img class="footer_logo" src="../../core/content/img/logo_header.svg" />
+    </footer>
+  </body>
+</html>
