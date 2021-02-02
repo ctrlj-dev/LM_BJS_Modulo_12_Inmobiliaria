@@ -18,7 +18,7 @@ const setEquipments = property => {
   });
 };
 
-const setImages = property => {
+  const setImages = property => {
   const list = document.getElementById('images');
 
   property.images.forEach((image, id) => {
