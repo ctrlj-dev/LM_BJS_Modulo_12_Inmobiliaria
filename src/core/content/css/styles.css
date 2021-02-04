@@ -84,6 +84,10 @@ textarea.error,
   border-color: #f44336;
 }
 
+p.images-error {
+  width: 100%;
+}
+
 .container {
   width: 90vw;
   max-width: 1200px;

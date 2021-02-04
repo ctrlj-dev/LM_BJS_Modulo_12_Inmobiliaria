@@ -9,7 +9,8 @@ import {
   onSetError,
   onAddFile,
   onUpdateField,
-  onSubmitForm
+  onSubmitForm,
+  onSetFormErrors,
 } from '../../common/helpers';
 import {
   formatDeleteFeatureButtonId,
@@ -286,9 +287,28 @@ onUpdateField('images', event => {
 });
 
 
+
+onSubmitForm('save-button', () => {
+  formValidation.validateForm(uploadProperty).then(result => {
+    onSetFormErrors(result);
+    const apiProperty = mapUploadPropertyFromApiToVM(uploadProperty);
+    console.log(result);
+    if (result.succeeded) {
+      console.log('¡PROPIEDAD GUARDADA!');
+      insertProperty(apiProperty).then(() => {
+        history.back();
+      });
+    }
+  });
+});
+
+
+/*
+
 const onSave = () => {
   return insertProperty(uploadProperty);
 };
+
 
 onSubmitForm('save-button', () => {
 
@@ -307,3 +327,5 @@ onSubmitForm('save-button', () => {
     }
   });
 });
+*/
+
